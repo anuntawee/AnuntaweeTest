@@ -6,9 +6,8 @@
 </head>
 <?php
  include("connect.php");
-  $body = file_get_contents('/employees/5e2e9dd0880bdf2d751b51c8');
+  $ch = file_get_contents('/employees/5e2e9dd0880bdf2d751b51c8');
 
-  echo $body;
   $data = json_decode($ch);
 
   
